@@ -52,33 +52,6 @@
   </head>
 
   <body>
-    <!-- <nav
-      class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
-    >
-      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">CyberFood</a>
-      <button
-        class="navbar-toggler position-absolute d-md-none collapsed"
-        type="button"
-        data-toggle="collapse"
-        data-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <input
-        class="form-control form-control-dark w-100"
-        type="text"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav> -->
 
     <div class="container-fluid">
       <div class="row">
@@ -89,21 +62,9 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">
-                  <i class="fa fa-home"></i>
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link active" href="./food.html">
                   <i class="fa fa-utensils"></i>
                   Add Food<span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./food-list.html">
-                  <i class="fa fa-list"></i>
-                  Food List
                 </a>
               </li>
             </ul>
@@ -112,14 +73,6 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
           <nav class="my-3" aria-label="breadcrumb">
-            <!-- <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="./index.html">Dashboard</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Add Food
-              </li>
-            </ol> -->
           </nav>
           <div class="row">
             <div class="col-md-7">
@@ -230,12 +183,12 @@
                     </div>
                     <hr class="mb-4" />
                     <button
-                      onclick="themMon()"
+                      onclick="addFood()"
                       id="btnThemMon"
                       class="btn btn-warning btn-lg btn-block"
                       type="button"
                     >
-                      Thêm Món
+                      Add Food
                     </button>
                   </form>
                 </div>
@@ -314,7 +267,6 @@
                     >
                       <div>
                         <h6>Mô tả</h6>
-
                         <p id="pMoTa" class="text-muted"></p>
                       </div>
                     </li>
@@ -326,18 +278,9 @@
         </main>
       </div>
     </div>
-    <!-- <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2017-2020 Company Name</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-      </ul>
-    </footer> -->
     <script src="../../assets/lib/js/Jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="../../assets/lib/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <script type="module" src="../controllers/v1/main-v1.js"></script>
   </body>
 </html>

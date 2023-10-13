@@ -1,11 +1,8 @@
 import { layThongtinTuForm } from "./controller-v1.js";
 
-let themMon = () => {
+let addFood = () => {
   let data = layThongtinTuForm();
-  console.log("😀 - themMon - data", data);
-  // destructuring
   let { ma, ten, loai, gia, hinhAnh, tinhTrang, moTa, khuyenMai } = data;
-  // show data lên layout
   document.getElementById("spMa").innerText = ma;
   document.getElementById("spTenMon").innerText = ten;
   document.getElementById("spLoaiMon").innerText = loai;
@@ -16,4 +13,4 @@ let themMon = () => {
   document.getElementById("spKM").innerText = khuyenMai + "%";
   document.getElementById("spGiaKM").innerText = data.tinhGKM();
 };
-window.themMon = themMon;
+window.addFood = addFood;
