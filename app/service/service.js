@@ -1,3 +1,5 @@
-export let https = axios.create({
-  baseURL: "https://633ec05b0dbc3309f3bc5455.mockapi.io",
+let https = axios.create({
+  baseURL: "https://65151cb1dc3282a6a3cddd57.mockapi.io",
 });
+
+export default https;
